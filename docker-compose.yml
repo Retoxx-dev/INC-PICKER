@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    container_name: incpicker
+    image: python:3.9
+    volumes:
+        - ./:/app
+    tty: true
+    
