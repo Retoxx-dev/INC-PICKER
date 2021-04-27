@@ -3,12 +3,12 @@ import time
 import pymsteams
 
 
-myTeamsMessage = pymsteams.connectorcard("")
-url = ''
-#url = ''
+myTeamsMessage = pymsteams.connectorcard("#paste your incoming webhook url here#")
 
-user = ''
-pwd = ''
+url = '#Servicenow API link#'
+
+user = '#Servicenow login#'
+pwd = '#Servicenow password#'
 
 while True:
     response = requests.get(url, auth=(user, pwd))
@@ -20,7 +20,7 @@ while True:
         data = response.json()
 
         for i in data['result']:
-            myTeamsMessage.text('{} has been assigned to your queue!'.format(i['number']))
+            myTeamsMessage.text('<a href="{}">{}</a> has been assigned to your queue!'.format(i['sys_id'], i['number']))
             myTeamsMessage.send()
             print('{} has been posted'.format(i['number']))
             time.sleep(5)
