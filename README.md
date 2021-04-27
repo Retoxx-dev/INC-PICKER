@@ -6,13 +6,14 @@ The first and only docker container named incpicker contains simple python scrip
 
 ## Prerequisites
 
-    * Internal ServiceNow account (It's crutial since getting security token from sso provider is nearly imposible ('At least in my case :('))
-    * Access to the incidents table
-    * Ms Teams incoming webhook (more info here: `https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook`)
+    - Internal ServiceNow account (It's crutial since getting security token <br>
+    from sso provider is nearly imposible ('At least in my case :('))
+    - Access to the incidents table
+    - Ms Teams incoming webhook ([more info here:](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook))
 
     
 ## USAGE
-    * Make sure Docker and Docker-Compose are installed - In case you don't have it: https://get.docker.com/)
+    * Make sure Docker and Docker-Compose are installed - [In case you don't have it](https://get.docker.com/)
     * Clone this repo `https://github.com/Retoxx-dev/Project-B.git`
     * Open any command line and navigate to the repo's folder
     * Simply type in `docker-compose up -d` to start the application
