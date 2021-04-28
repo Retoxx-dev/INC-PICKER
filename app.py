@@ -20,7 +20,7 @@ while True:
         data = response.json()
 
         for i in data['result']:
-            myTeamsMessage.text('<a href="{}">{}</a> has been assigned to your queue!'.format(i['sys_id'], i['number']))
+            myTeamsMessage.text('<h1><center><a href="{}">{}</a> has been assigned to your queue!</center></h1>'.format(i['sys_id'], i['number']))
             myTeamsMessage.send()
             print('{} has been posted'.format(i['number']))
             time.sleep(5)
