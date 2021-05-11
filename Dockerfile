@@ -1,9 +1,11 @@
-FROM python:3.9
+FROM python:3.8-alpine
 
 WORKDIR /app
 
-COPY --chown=app:app app.py .
+COPY requirements.txt ./
 
-RUN pip install requests && pip install pymsteams
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY --chown=app:app app.py .
 
 CMD ["python","-u","app.py"]
