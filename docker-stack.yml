@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+    ticketpicker:
+        image: #Image name
+        deploy:
+            replicas: 1
+        
