@@ -1,7 +1,7 @@
 version: "3.8"
 services:
     ticketpicker:
-        image: #Image name
+        image: ticketpicker:1.0
         deploy:
             replicas: 1
         
