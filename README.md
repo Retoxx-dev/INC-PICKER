@@ -2,7 +2,10 @@
 
 ## Desctiption
 
-The first and only docker container named incpicker contains simple python script that uses ServiceNow API to check if there are any Incidents assigned to specified assignment group and if so - it posts a message on teams channel using pymsteams and teams Incoming Webhook.
+The first and only docker container named ticket contains simple python script that uses ServiceNow API to check if there are any Incidents or Tasks assigned to specified assignment group and if so - it posts a message on teams channel using pymsteams and teams Incoming Webhook.
+
+
+![Tickerpicker image](https://github.com/Retoxx-dev/INC-PICKER/blob/355adcb08c8b36b85c6ee9d7e3c225a6e327c214/img.png)
 
 ## Prerequisites
 
