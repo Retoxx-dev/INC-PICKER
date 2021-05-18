@@ -28,7 +28,7 @@ Remember to use `docker-compose down` to clean up after you finish
 
 ### USAGE
 Head over to the project's repo and build application image using: `docker build --tag ticketpicker:1.0 .` <br/>
-To deploy it use `docker stack deploy -c docker-stack.yml` app or `docker service create -d --name ticketpicker --replicas=1 ticketpicker:1.0`
+To deploy it use `docker stack deploy -c docker-stack.yml app` or <br/> `docker service create -d --name ticketpicker --replicas=1 ticketpicker:1.0`
 <br/><br/>
 
-Remember to remove it when you done by using `docker stack rm app` or if you used service command: `docker service rm ticketpicker`
+Remember to remove it when you done by using `docker stack rm app` or if you used service command: <br/> `docker service rm ticketpicker`
