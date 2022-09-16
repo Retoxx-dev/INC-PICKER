@@ -1,8 +1,0 @@
-version: '3'
-services:
-  ticketpicker:
-    build:
-      context: .
-    volumes:
-        - ./:/app
-    

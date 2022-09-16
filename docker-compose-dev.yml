@@ -1,0 +1,19 @@
+version: '3'
+services:
+  incident_picker:
+    build:
+      context: .
+      dockerfile: ./DevOps/Docker/INC_PICKER/Dockerfile
+    volumes:
+        - ./INC_PICKER/:/app
+    env_file:
+      - dev.env
+
+  task_picker:
+    build:
+      context: .
+      dockerfile: ./DevOps/Docker/TASK_PICKER/Dockerfile
+    volumes:
+        - ./TASK_PICKER/:/app
+    env_file:
+      - dev.env 
